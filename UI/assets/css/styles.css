@@ -3,9 +3,12 @@ html, body{
 }
 
 .the-logo{
-    color: azure;
+    color:azure;
     font-family: 'Leckerli One', cursive;
-    font-size: 30px;    
+    font-size: 30px;
+    background-color: #377b9c;
+    width: 10%;
+    margin-left: 45%;
 }
 
 .callto-action{
@@ -30,7 +33,6 @@ html, body{
 
 .myform input{
     width:80%;
-    margin:5px;
     padding: 0.375rem 0.75rem;
 }
 
@@ -61,7 +63,7 @@ html, body{
 .list li p {
   padding: 8px;
   font-weight: 300;
-  letter-spacing: .09em;
+  letter-spacing: .03em;
   text-transform: uppercase;
 }
 
@@ -91,9 +93,8 @@ html, body{
 }
 
 .wrapper-header{
-    background-image: url("../images/myheader.jpg");
-    min-height: 80vh;
-    height: 200px;
+    background-image: url("../images/another-header.png");                                                                                                                                                                                                             ");
+    height: 500px;
     /* Position and center the image to scale nicely on all screens */
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -101,6 +102,7 @@ html, body{
     position: centered;
    
 }
+
 .welcome{
     display:flex;
     flex-direction: column;
@@ -115,7 +117,7 @@ html, body{
     float: center;
     width: 50%;
     margin-left: 25%;
-    margin-top:7%;
+    margin-top:5%;
     padding: 20px;
 }
 
@@ -126,7 +128,7 @@ html, body{
     width:50%;
     height:200px;
     margin:0 auto;
-    flex-shrink: inherit;
+    
 }
 
 .box-center{
@@ -134,16 +136,16 @@ html, body{
 }
 
 .box-center button{
-    padding: 15px 50px;
+    padding: 15px 25px;
     background: orange;
     color: #f2f2f2;
     text-transform: uppercase;
     letter-spacing: .09em;
     border: 1px solid orange;
     border-radius:0px;
+    flex-shrink: 1;
+    flex-grow:1;
 }
-
-
 
 .meals-container{
     margin: 10px 3%;
@@ -152,6 +154,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
+    height: inherit;
     
 }
 .meals-box{
@@ -163,7 +166,8 @@ html, body{
     flex-basis: 22%;
     border-radius: 10px;
     margin-bottom: 30px;
-    margin-right: 30px;  
+    margin-right: 10px;
+    margin-left: 10px;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +177,7 @@ html, body{
 }
 
 
-.img-thumbnail{
+.img-thumbnail{ 
    border-style: none;
    max-width: 100%;
    border-radius: 10px 10px 0 0;
@@ -192,6 +196,170 @@ html, body{
     border-radius:0px;
     width: 100px;
     margin-bottom: 10px;
+    max-height: 50px; 
     flex:1;
 
 }
+.panel-list-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.side-panel{
+    background-image: url("../images/food.png");   
+    background-color:gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:800px;
+    min-width: 300px;
+    align-self: flex-start;
+    margin: 0px;
+    
+}
+
+.current button {
+    padding: 8px 20px;
+    background:orange;
+    color: #f2f2f2;
+    font-size: 14px;
+    letter-spacing: .09em;
+    border: 1px solid orange;
+    border-radius:0px;
+    width: 200px;
+    margin-bottom: 40px;
+    max-height: 50px;
+    
+}
+
+.side-panel .the-logo{
+    color:azure;
+    font-family: 'Leckerli One', cursive;
+    font-size: 30px;
+    background-color: #377b9c;
+    width: 80%;
+    margin-left:0%;
+}
+
+
+.side-panel button{
+    padding: 8px 20px;
+    background:#377b9c;
+    color: #f2f2f2;
+    font-size: 14px;
+    letter-spacing: .09em;
+    border: 1px solid white;
+    border-radius:0px;
+    width: 200px;
+    margin-bottom: 40px;
+    max-height: 50px;
+    
+}
+
+
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .meals-container{
+        margin: 10px;
+        padding-left: 2%;
+        max-width: 100%;
+        align-items: flex-end;
+        
+    }
+    .meals-box{
+        flex-basis: 30%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-right:10px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
+    }
+    .panel-list-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-panel{
+        width:100%;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        height: 500px;
+    }
+
+    .side-panel button{
+          
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+}
+
+    @media only screen and (max-width: 600px) {
+        .container-box{
+            margin-left: 200px;
+            flex-direction: column;
+            
+        }
+        .meals-container{
+            margin-right: 20px;
+            padding-left: 2%;
+            max-width: 100%;
+            align-items: flex-end;
+            
+        }
+        .meals-box{
+            flex-basis: 100%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            margin-right: 0px;     
+    
+        }
+        .panel-list-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-panel{
+            width:100%;
+            flex-direction: column;
+            flex-wrap: no-wrap;
+            height: 500px;
+        }
+
+        .side-panel button{
+              
+            font-size: 12px;
+            padding: 15px 10px;
+        }
+
+    
+    }
+
