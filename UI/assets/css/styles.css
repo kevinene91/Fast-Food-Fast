@@ -1,0 +1,197 @@
+html, body{
+    margin: 0;
+}
+
+.the-logo{
+    color: azure;
+    font-family: 'Leckerli One', cursive;
+    font-size: 30px;    
+}
+
+.callto-action{
+    color: orange;
+    font-family: 'Lobster', cursive;
+}
+
+
+.form-container{
+    background-color: white;    
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+    box-sizing: border-box;
+    display: flex;
+    width: 350px;
+    flex-grow: 1;
+    flex-direction:column;
+    flex-shrink: inherit;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+
+.myform input{
+    width:80%;
+    margin:5px;
+    padding: 0.375rem 0.75rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.list > li:not(:last-child){
+    margin-bottom:40px;
+}
+.list{
+  list-style-type: none;
+  padding: 10px;
+}
+
+.list li{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.list > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.list li label,
+.list li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.list > li > label,
+.list li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.list > li > label + *,
+.list {
+  flex: 1 0 220px;
+}
+
+.list li p {
+  margin: 9px;
+}
+
+.myform button{
+    
+    padding: 8px 135px;
+    background: orange;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.wrapper-header{
+    background-image: url("../images/myheader.jpg");
+    min-height: 80vh;
+    height: 200px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: centered;
+   
+}
+.welcome{
+    display:flex;
+    flex-direction: column;
+}
+.welcome-text{
+    color: #2b6363;
+    font-family: 'Lobster', cursive;
+    background-color: aqua;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    float: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top:7%;
+    padding: 20px;
+}
+
+.container-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:50%;
+    height:200px;
+    margin:0 auto;
+    flex-shrink: inherit;
+}
+
+.box-center{
+    margin-top: 10px;    
+}
+
+.box-center button{
+    padding: 15px 50px;
+    background: orange;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border: 1px solid orange;
+    border-radius:0px;
+}
+
+
+
+.meals-container{
+    margin: 10px 3%;
+    padding-left: 2%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    
+}
+.meals-box{
+    background-color:#fff;    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.04), 0 4px 5px 0 rgba(0,0,0,.04), 0 1px 10px 0 rgba(0,0,0,.05);
+    transition: all .1s ease-in;
+    transition: 0.3s;
+    box-sizing: border-box;
+    flex-basis: 22%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-right: 30px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+
+
+.img-thumbnail{
+   border-style: none;
+   max-width: 100%;
+   border-radius: 10px 10px 0 0;
+     
+}
+
+
+.meals-box button{
+    
+    padding: 8px 10px;
+    background: orange;
+    color: #f2f2f2;
+    font-size: 14px;
+    letter-spacing: .09em;
+    border: 1px solid orange;
+    border-radius:0px;
+    width: 100px;
+    margin-bottom: 10px;
+    flex:1;
+
+}
