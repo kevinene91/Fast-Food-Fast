@@ -8,38 +8,28 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
+ 
   <link rel="stylesheet" href="assets/css/responsive.css">
 
-  <title>Fast-foods| order-history </title>
+  <title> Fast-foods|Admin  </title>
 </head>
-
-<body>
-    <div class=" panel-list-container">
+<body> 
+       <div class=" panel-list-container">
     <div class="side-panel" > 
         <h2 class="center the-logo"> Fast Foods </h2>
-        <p class="center the-logo">Welcome Nesh </p>
-        <button class="current"> Delicacies </button>
-        <button> Your Order </button>
-        <button> Order History </button>
+        <p class="center the-logo">Admin </p>
+        <button class="current"> Manage Delicacies </button>
+        <a href="admin_order_list.html"><button> Manage Orders </button></a>
         <a href="foods_home.html"> <button>Logout</button> </a>
     </div> 
-
-    <div class="table-flex"> 
-    <h2 class="center info"> Your Order History </h2>
-
-    <div class="summary"> 
-
-        <div class="card-element">
-           <p> Number of orders: 4 </p>
-        </div>
-
-        <div class="card-element">
-           <p>Amount Spent: ksh. 2000.00 </p>
-
-        </div>
-    </div> 
-
-         <table>
+           <div class="table-flex"> 
+    <h2 class="center info"> Our Products  </h2>
+    <div class="top-end">
+    <button class="accept" id="myBtn">ADD</button>
+    
+    </div>
+ 
+    <table>
          <thead>
             <tr>
                 <th>ID</th>
@@ -48,6 +38,8 @@
                 <th>Quantity</th>
                 <th>Price</th>
                 <th>Date</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -58,6 +50,8 @@
                 <td>2</td>
                 <td>180.00</td>
                 <td>20/08/2017</td>
+               <td><button class="Complete" id="myBtn">Edit</button></td>
+                <td><button class="Decline">Delete</biutton></td>
             <tr>
               <tr>
                 <td>3</td>
@@ -66,6 +60,8 @@
                 <td>5</td>
                 <td>900.00</td>
                 <td>6/10/2017</td>
+                <td><button class="Complete">Edit</button></td>
+                <td><button class="Decline">Delete</biutton></td>
             <tr>
 
               <tr>
@@ -75,6 +71,8 @@
                 <td>1</td>
                 <td>100.00</td>
                 <td>25/12/2017</td>
+                <td><button class="Complete">Edit</button></td>
+                <td><button class="Decline">Delete</biutton></td>
             <tr>
               <tr>
                 <td>1</td>
@@ -83,20 +81,47 @@
                 <td>7</td>
                 <td>400.00</td>
                 <td>1/02/2018</td>
+                <td><button class="Complete">Edit</button></td>
+                <td><button class="Decline">Delete</biutton></td>
             <tr>
-       </tbody>
-       <tfoot> 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Total</td>
-            <td>ksh. 2000.00</td>
-
-        </tr> 
-       </tfoot> 
+       </tbody> 
 
          </table>
-         
 
     </div> 
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            
+
+        <div class="myform">
+        <h2 class="center callto-action">Add Delicacy</h2>
+            <ul class="list">
+            <li>
+                <label> Upload image</label>
+                <input  type="file">
+                
+            </li>
+             <li>
+                <label> Name </label>
+                <input type='text' name='name'>
+             </li>                 
+             <li>
+                <label> Cost </label>
+                <input type='integer' name='name'>
+             </li>
+             <li>
+             
+             </li>
+            </ul>
+        </div> 
+  
+
+
+    </body>
+<script src="../assets/js/app.js"> </script>
+
+
+
+    </html>

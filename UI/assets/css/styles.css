@@ -310,15 +310,13 @@ table{
     margin-top: 50px;
     
 }
-tbody tr:nth-child(even) {
-    background-color: #e495e4;
-  }
+
 
 th,td{
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #a2d3cd;
-    width: relative;
+    width: 18%
 }
 tbody td {
     text-align: center;
@@ -344,30 +342,14 @@ td .td-double{
 
 
 
-/* .table-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: space-between;
-    
-} */
-
-    /* background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px; */
-
 .content{
-    padding: 0 40px;
+    padding: 0 100px;
     background-color:azure;
     width:100px;
     display:none;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .content ul{
@@ -378,6 +360,7 @@ td .td-double{
     display: flex;
     flex-direction: column;
     width: 100px;
+    justify-content: flex-start;
 }
 
 .click-collapsible{
@@ -475,44 +458,108 @@ td .td-double{
     }
 }
 
-    @media only screen and (max-width: 600px) {
-        .container-box{
-            margin-left: 200px;
-            flex-direction: column;
-            
-        }
-        .meals-container{
-            margin-right: 20px;
-            padding-left: 2%;
-            max-width: 100%;
-            align-items: flex-end;
-            
-        }
-        .meals-box{
-            flex-basis: 100%;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            margin-right: 0px;     
-    
-        }
-        .panel-list-container{
-            display: flex;
-            flex-direction: column;
-        }
+.top-end{
+    margin-left: 80%;
+}
 
-        .side-panel{
-            width:100%;
-            flex-direction: column;
-            flex-wrap: no-wrap;
-            height: 500px;
-        }
 
-        .side-panel button{
-              
-            font-size: 12px;
-            padding: 15px 10px;
-        }
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    height:70%;
+}
 
-    
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container-box{
+        margin-left: 200px;
+        flex-direction: column;
+        
     }
+    .meals-container{
+        margin-right: 20px;
+        padding-left: 2%;
+        max-width: 100%;
+        align-items: flex-end;
+        
+    }
+    .meals-box{
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-right: 0px;     
+
+    }
+    .panel-list-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-panel{
+        width:100%;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        height: 500px;
+    }
+
+    .side-panel button{
+            
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+
+
+}
 
