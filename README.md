@@ -21,10 +21,14 @@ It is a Wep application that allows its user to order for fast foods.
 - Allow admin to mark orders as complete 
 
 ### Tools used 
-
+<img src="assets/landingpage.png">
 - Html5 
 - CSS3 
 - Javascript 
 
 ### Github Pages 
 [www://kevinene91.github.io/Fast-Food-Fast/index.html](url)
+
+### Author 
+
+Kevin Munene 
