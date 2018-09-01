@@ -27,7 +27,7 @@ It is a Wep application that allows its user to order for fast foods.
 - Javascript 
 
 ### Github Pages 
-[www://kevinene91.github.io/Fast-Food-Fast/index.html](url)
+[https://kevinene91.github.io/Fast-Food-Fast/index.html](url)
 
 ### Author 
 
