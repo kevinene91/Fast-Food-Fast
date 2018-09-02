@@ -305,18 +305,20 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 2px 1px,  solid #a2d3cd;;
-    margin-left: 15px;
+    border: 2px 1px,  solid #a2d3cd;
+    margin-left: 25px;
     margin-top: 50px;
     
 }
-
+tbody tr:nth-child(even) {
+    background-color: #a2d3cd;
+  }
 
 th,td{
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #a2d3cd;
-    width: 18%
+    width: relative;
 }
 tbody td {
     text-align: center;
@@ -339,7 +341,6 @@ td .img-thumbnail{
 td .td-double{
     width: 2000px;
 }
-
 
 
 .content{
