@@ -5,7 +5,7 @@ Fast-Food-Fast is a food delivery service app for a restaurant.
 It is a Wep application that allows its user to order for fast foods. 
 
 ### Screenshots
-<img src="https://github.com/kevinene91/Fast-Food-Fast/blob/master/UI/assets/images/landingpage.png">
+<img src="https://github.com/kevinene91/Fast-Food-Fast/blob/gh-pages/UI/assets/images/landingpage.png">
 
 ### Functionalitis 
 **User Functionalities.**
