@@ -215,6 +215,7 @@ a{
 .panel-list-container{
     display: flex;
     flex-direction: row;
+    flex-grow: 2;
 
 }
 
@@ -228,6 +229,7 @@ a{
     min-width: 300px;
     align-self: flex-start;
     margin: 0px;
+    
     
 }
 
@@ -269,8 +271,6 @@ a{
     
 }
 
-
-
 .list-container{
     display: flex;
     flex-direction: column;
@@ -305,18 +305,21 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 2px 1px,  solid #a2d3cd;;
+    border: 2px 1px,  solid #a2d3cd;
     margin-left: 15px;
+    margin-right: 250px;
     margin-top: 50px;
     
 }
-
+tbody tr:nth-child(even) {
+    background-color: #a2d3cd;
+  }
 
 th,td{
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #a2d3cd;
-    width: 18%
+    width: 10px;
 }
 tbody td {
     text-align: center;
@@ -328,18 +331,13 @@ tfoot {
     border-color: inherit;
     text-align: center;
 }
-
+     
 td .img-thumbnail{
     border-style: none;
     vertical-align: center;
-    max-width: 90px;
+    max-width: 100px;
     border-radius: 10px;
 }
-
-td .td-double{
-    width: 2000px;
-}
-
 
 
 .content{
@@ -385,7 +383,7 @@ td .td-double{
     letter-spacing: .09em;
     border: 1px solid orange;
     border-radius:0px;
-    width: 100px;
+    width: 70px;
     margin-bottom: 10px;
     max-height: 50px; 
     flex:1;
@@ -399,7 +397,7 @@ td .td-double{
     letter-spacing: .09em;
     border: 1px solid orange;
     border-radius:0px;
-    width: 100px;
+    width: 70px;
     margin-bottom: 10px;
     max-height: 50px; 
     flex:1;
@@ -409,11 +407,11 @@ td .td-double{
     padding: 8px 8px;
     background: orange;
     color: #f2f2f2;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: .09em;
     border: 1px solid orange;
     border-radius:0px;
-    width: 100px;
+    width: 70px;
     margin-bottom: 10px;
     max-height: 50px; 
     flex:1;
@@ -443,6 +441,7 @@ td .td-double{
     .panel-list-container{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .side-panel{
@@ -450,11 +449,21 @@ td .td-double{
         flex-direction: column;
         flex-wrap: no-wrap;
         height: 500px;
+        flex-basis: 100%
     }
 
     .side-panel button{     
         font-size: 12px;
         padding: 15px 10px;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        height:60%;
     }
 }
 
@@ -476,26 +485,14 @@ td .td-double{
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
 }
-.modal2 {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 50px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-}
+
 .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 35%;
-    height:70%;
+    width: 45%;
+    height:60%;
 }
 
 
@@ -545,6 +542,8 @@ td .td-double{
     .panel-list-container{
         display: flex;
         flex-direction: column;
+        flex-basis: 100%;
+        align-self: auto;
     }
 
     .side-panel{
@@ -552,12 +551,35 @@ td .td-double{
         flex-direction: column;
         flex-wrap: no-wrap;
         height: 500px;
+        flex-basis: 100%;
     }
 
     .side-panel button{
             
         font-size: 12px;
         padding: 15px 10px;
+
+    }
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 50px; 
+        left: 0;
+        top: 0;
+        width: 60%; 
+        height: 60%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        height:60%;
     }
 
 
