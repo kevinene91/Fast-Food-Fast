@@ -15,7 +15,7 @@ for (var i = 0; i < collapsible.length; i++){
 
     }
 
-
+// modal 
     var modal = document.getElementById('myModal');
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];

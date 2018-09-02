@@ -215,6 +215,7 @@ a{
 .panel-list-container{
     display: flex;
     flex-direction: row;
+    flex-grow: 2;
 
 }
 
@@ -228,6 +229,7 @@ a{
     min-width: 300px;
     align-self: flex-start;
     margin: 0px;
+    
     
 }
 
@@ -269,8 +271,6 @@ a{
     
 }
 
-
-
 .list-container{
     display: flex;
     flex-direction: column;
@@ -306,7 +306,8 @@ table{
     border-spacing: 0;
     width: 100%;
     border: 2px 1px,  solid #a2d3cd;
-    margin-left: 25px;
+    margin-left: 15px;
+    margin-right: 250px;
     margin-top: 50px;
     
 }
@@ -318,7 +319,7 @@ th,td{
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #a2d3cd;
-    width: relative;
+    width: 10px;
 }
 tbody td {
     text-align: center;
@@ -330,16 +331,12 @@ tfoot {
     border-color: inherit;
     text-align: center;
 }
-
+     
 td .img-thumbnail{
     border-style: none;
     vertical-align: center;
-    max-width: 90px;
+    max-width: 100px;
     border-radius: 10px;
-}
-
-td .td-double{
-    width: 2000px;
 }
 
 
@@ -386,7 +383,7 @@ td .td-double{
     letter-spacing: .09em;
     border: 1px solid orange;
     border-radius:0px;
-    width: 100px;
+    width: 70px;
     margin-bottom: 10px;
     max-height: 50px; 
     flex:1;
@@ -400,7 +397,7 @@ td .td-double{
     letter-spacing: .09em;
     border: 1px solid orange;
     border-radius:0px;
-    width: 100px;
+    width: 70px;
     margin-bottom: 10px;
     max-height: 50px; 
     flex:1;
@@ -410,11 +407,11 @@ td .td-double{
     padding: 8px 8px;
     background: orange;
     color: #f2f2f2;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: .09em;
     border: 1px solid orange;
     border-radius:0px;
-    width: 100px;
+    width: 70px;
     margin-bottom: 10px;
     max-height: 50px; 
     flex:1;
@@ -444,6 +441,7 @@ td .td-double{
     .panel-list-container{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .side-panel{
@@ -451,6 +449,7 @@ td .td-double{
         flex-direction: column;
         flex-wrap: no-wrap;
         height: 500px;
+        flex-basis: 100%
     }
 
     .side-panel button{     
@@ -546,6 +545,8 @@ td .td-double{
     .panel-list-container{
         display: flex;
         flex-direction: column;
+        flex-basis: 100%;
+        align-self: auto;
     }
 
     .side-panel{
@@ -553,12 +554,14 @@ td .td-double{
         flex-direction: column;
         flex-wrap: no-wrap;
         height: 500px;
+        flex-basis: 100%;
     }
 
     .side-panel button{
             
         font-size: 12px;
         padding: 15px 10px;
+
     }
 
 
