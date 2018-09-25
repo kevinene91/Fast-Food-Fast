@@ -5,7 +5,7 @@ Fast-Food-Fast is a food delivery service app for a restaurant.
 It is a Wep application that allows its user to order for fast foods. 
 
 ### Screenshots
-<img src="assets/landingpage.png">
+<img src="UI/assets/landingpage.png">
 
 
 ### Functionalitis 
